@@ -137,7 +137,18 @@ for i, sentence in enumerate(new_sentences):
     print(f"Prediction: {'XSS Detected' if predictions[i] == 1 else 'No XSS Detected'}\n")
 
 ```
+### Abdal XSS AI Engine - TensorFlow Model
 
+To use the trained model in your TensorFlow project, simply run the following Python code:
+
+```python
+import tensorflow as tf
+
+# Load the saved model
+model = tf.keras.models.load_model('Abdal_XSS_AI_Engine')
+
+print("✅ Model loaded successfully!")
+```
 
 ## ❤️ Donation
 

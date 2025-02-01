@@ -136,6 +136,19 @@ for i, sentence in enumerate(new_sentences):
     print(f"Prediction: {'XSS Detected' if predictions[i] == 1 else 'No XSS Detected'}\n")
 
 ```
+### نحوه‌ی بارگذاری مدل برای TensorFlow 
+
+برای استفاده از این مدل در پروژه‌ی TensorFlow، کافی است کد زیر را اجرا کنید:
+
+```python
+import tensorflow as tf
+
+# Load the saved model
+model = tf.keras.models.load_model('Abdal_XSS_AI_Engine')
+
+print("✅ Model loaded successfully!")
+```
+
 ## ❤️ کمک به پروژه
 
 https://alphajet.ir/abdal-donation
